@@ -1,0 +1,19 @@
+<%- include("header.ejs") %>
+
+    <div class="home">
+        <h1 class="heading">Enter the URL</h1>
+        <form class="search-container" action="/submit" method="POST">
+            <input type="text" placeholder="Click here to write" class="search-box" name="url">
+            <input class="search-button" type="submit" value="Generate Qr">
+        </form>
+        <% if(locals.url){ %>
+            <h3 class="qr_url">Click on Qr to Open URL!</h3>
+            <%- include("qr-image.ejs") %>
+                <h4 class="qr_url"> URL : <a href="<%= url %>" target="_blank">
+                        <%= url %>
+                    </a>
+                </h4>
+                <% }%>
+    </div>
+
+    <%- include("footer.ejs") %>

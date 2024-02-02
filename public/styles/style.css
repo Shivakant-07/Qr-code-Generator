@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../image/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 13vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.logo_text {
+    position: relative;
+    width: 200px;
+    text-decoration: none;
+    color: black;
+    margin-top: 1.5%;
+    margin-left: 5%;
+}
+
+.logo_text::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #dedad9ff;
+    animation: showright 1s forwards;
+
+}
+
+@keyframes showright {
+    100% {
+        width: 0%;
+    }
+}
+
+.home {
+    height: 83vh;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.search-box {
+    width: 30%;
+    height: 2.5rem;
+}
+
+.search-button {
+    width: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.Qr-code {
+    display: flex;
+    justify-content: center;
+}
+
+.qr_image {
+    width: 12rem;
+    height: auto;
+}
+
+.qr_url {
+    padding: 1% 0%;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
